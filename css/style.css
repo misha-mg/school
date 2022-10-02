@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0 auto;
+  scroll-behavior: smooth;
+  background-color: #011C26;
+  font-family: "IBM Plex Mono", monospace;
+  color: #41BF9B;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #41BF9B;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+a:hover {
+  color: #F2E63D;
+}
+
+.container {
+  max-width: 1245px;
+  margin: 0 auto;
+  padding: 75px 0px;
+}
+
+.wrapper {
+  width: 100%;
+  padding: 0px 50px;
+}
+
+header {
+  background: rgba(1, 28, 38, 0.6);
+  background-image: url(../img/hero-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.header-menu__wrapper {
+  border-bottom: solid 3px #B149BF;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.header-menu__wrapper:hover {
+  background: rgba(1, 28, 38, 0.8);
+}
+
+.container-header {
+  max-width: 1245px;
+  margin: 0 auto;
+  padding: 30px 0px;
+}
+
+.header-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-menu__logo a {
+  font-size: 40px;
+}
+
+.header-menu__navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header-menu__navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 400px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar-item {
+  font-size: 20px;
+}
+
+.hero-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 500px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero-block__title {
+  width: 50%;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 45%;
+}
+
+.hero-block__title h1 {
+  font-size: 60px;
+}
+
+.hero-block__title h2 {
+  font-size: 22px;
+}
+
+.hero-block__title span {
+  font-size: 18px;
+}
+
+.hero-block__button {
+  border: solid 2px #B149BF;
+  color: #B149BF;
+  padding: 15px 20px;
+  font-weight: 500;
+  font-size: 22px;
+  background-color: transparent;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  width: 200px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.hero-block__button:hover {
+  color: #F2E63D;
+  border-color: #F2E63D;
+}
+
+.hero-block__intertain {
+  background-color: #41BF9B;
+  width: 45%;
+  height: 300px;
+  border: solid 3px #B149BF;
+  color: #B149BF;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  padding: 20px;
+}
+
+.some-block {
+  font-weight: 500;
+}
+
+.footer__wrapper {
+  border-top: solid 3px #B149BF;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.footer__wrapper:hover {
+  background: rgba(1, 28, 38, 0.8);
+}
+
+.container-footer {
+  max-width: 1245px;
+  margin: 0 auto;
+  padding: 20px 0px;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.social {
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-icon {
+  height: 30px;
+}
+
+.author {
+  font-size: 20px;
+}
