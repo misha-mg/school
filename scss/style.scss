@@ -25,14 +25,12 @@ html{
 	scroll-behavior: smooth;
 }
 body{
+    height: 100%;
 	margin: 0 auto;
 	scroll-behavior: smooth;
     background-color: $dark;
     font-family: 'IBM Plex Mono', monospace;
     color: $green;
-    // background-image: url(../img/hero-bg.png);
-    // background-repeat: no-repeat;
-    // background-size: cover;
 }
 li{
     list-style: none;
@@ -72,11 +70,23 @@ header{
     background-image: url(../img/hero-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
+    min-height: 700px;
 }
 
 .header-menu__wrapper {
     border-bottom: solid 3px $violet;
     transition: all 0.3s;
+    position: fixed;
+}
+.header-menu__wrapper::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: $dark;
 }
 .header-menu__wrapper:hover {
     background: rgba(1, 28, 38, 0.8);
@@ -84,18 +94,23 @@ header{
 .container-header {
     max-width: 1245px;
     margin: 0 auto;
-    padding: 30px 0px;
+    padding: 15px 0px;
 }
 .header-menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+.header-menu__logo{
+    z-index: 2;
+}
 .header-menu__logo a{
     font-size: 40px;
-}.header-menu__navbar{
+    font-weight: 600;
+}
+.header-menu__navbar{
     display: flex;
-
+    z-index: 3;
 }
 .header-menu__navbar ul{
     display: flex;
@@ -111,8 +126,9 @@ header{
 
 // HERO-BLOCK
 
-.hero-block__wrapper {
 
+.hero-block__wrapper {
+    padding-top: 50px;
 }
 .wrapper {
 }
@@ -125,8 +141,8 @@ header{
     align-items: center;
 }
 .hero-block__title {
-    width: 50%;
-    height: 300px;
+    min-width: 450px;
+    min-height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -148,29 +164,21 @@ header{
     transition: all 0.3s;
 }
 .hero-block__button:hover{
-
     color: $yellow;
     border-color: $yellow;
 }
 .hero-block__intertain {
-    background-color: $green;
-    width: 45%;
+    // background-color: $green;
+    width: 400px;
     height: 300px;
     border: solid 3px $violet;
     color: $violet;
     transition: all 0.4s;
     padding: 20px;
 }
-.some-block{
-    font-weight: 500;
-}
-
 
 // FOOTER
 
-footer{
-
-}
 
 .footer__wrapper {
     border-top: solid 3px $violet;
@@ -189,6 +197,8 @@ footer{
 .footer {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    height: 30px;
 }
 .social {
     width: 200px;
@@ -202,4 +212,160 @@ footer{
 }
 .author {
     font-size: 20px;
+}
+.header__burger{
+    display: none;
+    z-index: 2;
+}
+
+
+
+
+// ПЕРВАЯ АДАПТАЦИЯ
+
+
+@media screen and (max-width: 1070px) {
+
+    header{
+        background-image: url(../img/hero-bg1.png);
+    }
+    .hero-block {
+        flex-direction: column;
+    }
+    .hero-block__title {
+        align-items: center;
+        margin-bottom: 40px;
+    }
+    .hero-block__title span{
+        text-align: center;
+        
+    }
+
+
+}
+
+@media screen and (max-width: 768px) {
+
+
+    body.lock{
+        overflow: hidden;
+    }
+
+    .header__burger{
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+    }
+    .header__burger span{
+        position: absolute;
+        background-color: $green;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        top: 9px;
+        transition: all 0.2s ease 0s;
+    }
+    .header__burger::before,
+    .header__burger::after{
+        content: '';
+        position: absolute;
+        background-color: $green;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        transition: all 0.2s ease 0s;
+    }
+    .header__burger::before{
+        top: 0;
+    }
+    .header__burger::after{
+        bottom: 0;
+    }
+    .header-menu {
+        
+    }
+    .header-menu__navbar{
+        padding-top: 100px;
+        position: fixed;
+        top: -100%;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        overflow: auto;
+        background-color: $dark;
+        z-index: 1;
+        transition: all 0.3s ease 0s;
+    }
+    .header-menu__navbar.active{
+        top: 0px;
+    }
+    .header-menu__navbar ul{
+        display: block;
+        text-align: center;
+        width: 100%;
+        padding-top: 20px;
+    }
+    .header-menu__navbar ul li{
+       padding-bottom: 20px;
+       font-weight: 700;
+       font-size: 23px;
+    }
+
+    .header__burger.active::before{
+       transform: rotate(45deg);
+       top: 9px;
+    }
+    .header__burger.active::after{
+        transform: rotate(-45deg);
+        bottom: 9px;
+
+    }
+    .header__burger.active span{
+        transform: scale(0);
+    }
+
+}
+
+@media screen and (max-width: 580px) {
+   
+    .hero-block__title {
+        min-width: 300px;
+        min-height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 45%;
+    }
+    .hero-block__title h1{
+        font-size: 40px;
+    }
+    .hero-block__title h2{
+        font-size: 18px;
+    }
+    .hero-block__title span{
+        font-size: 16px;
+    
+    }
+    .hero-block__intertain {
+        // background-color: $green;
+        width: 300px;
+        height: 200px;
+        border: solid 3px $violet;
+        color: $violet;
+        transition: all 0.4s;
+        padding: 20px;
+    }
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        height: 70px;
+    }
+    .social {
+        order: 1;
+    }
+
 }
