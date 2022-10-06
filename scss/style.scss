@@ -308,10 +308,16 @@ header{
         padding-top: 20px;
     }
     .header-menu__navbar ul li{
-       padding-bottom: 20px;
+       padding-bottom: 22px;
        font-weight: 700;
-       font-size: 23px;
+       font-size: 25px;
+       width: 200px;
+       margin: 0 auto;
+       text-align: center;
     }
+    .header-menu__navbar ul li a{
+        width: 200px;
+     }
 
     .header__burger.active::before{
        transform: rotate(45deg);
