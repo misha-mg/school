@@ -14,7 +14,7 @@ body {
   height: 100%;
   margin: 0 auto;
   scroll-behavior: smooth;
-  background-color: #011C26;
+  background-color: rgb(1, 28, 38);
   font-family: "IBM Plex Mono", monospace;
   color: #41BF9B;
 }
@@ -68,7 +68,7 @@ header {
   top: 0;
   left: 0;
   z-index: 2;
-  background-color: #011C26;
+  background-color: rgb(1, 28, 38);
 }
 
 .header-menu__wrapper:hover {
@@ -186,14 +186,10 @@ header {
   border-color: #F2E63D;
 }
 
-.hero-block__intertain {
-  width: 400px;
-  height: 300px;
-  border: solid 3px #B149BF;
-  color: #B149BF;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
-  padding: 20px;
+.some-block canvas {
+  border: solid 2px #B149BF;
+  width: 450px;
+  height: 350px;
 }
 
 .footer__wrapper {
@@ -326,7 +322,7 @@ header {
     height: 100%;
     width: 100%;
     overflow: auto;
-    background-color: #011C26;
+    background-color: rgb(1, 28, 38);
     z-index: 1;
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
@@ -374,6 +370,10 @@ header {
   }
 }
 @media screen and (max-width: 580px) {
+  .header-menu__logo a {
+    font-size: 30px;
+  }
+
   .hero-block__title {
     min-width: 300px;
     min-height: 300px;
@@ -401,14 +401,9 @@ header {
     font-size: 16px;
   }
 
-  .hero-block__intertain {
+  .some-block canvas {
     width: 300px;
     height: 200px;
-    border: solid 3px #B149BF;
-    color: #B149BF;
-    -webkit-transition: all 0.4s;
-    transition: all 0.4s;
-    padding: 20px;
   }
 
   .footer {

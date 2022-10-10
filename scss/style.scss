@@ -9,7 +9,7 @@
 
 $violet:#B149BF;
 $blue:#012840;
-$dark:#011C26;
+$dark:rgb(1, 28, 38);
 $green:#41BF9B;
 $yellow:#F2E63D;
 
@@ -169,12 +169,12 @@ header{
 }
 .hero-block__intertain {
     // background-color: $green;
-    width: 400px;
-    height: 300px;
-    border: solid 3px $violet;
-    color: $violet;
-    transition: all 0.4s;
-    padding: 20px;
+
+}
+.some-block canvas{
+    border: solid 2px $violet;
+    width: 450px;
+    height: 350px;
 }
 
 // FOOTER
@@ -336,6 +336,9 @@ header{
 
 @media screen and (max-width: 580px) {
    
+    .header-menu__logo a{
+        font-size: 30px;
+    }
     .hero-block__title {
         min-width: 300px;
         min-height: 300px;
@@ -356,12 +359,11 @@ header{
     }
     .hero-block__intertain {
         // background-color: $green;
+    }
+    .some-block canvas{
         width: 300px;
         height: 200px;
-        border: solid 3px $violet;
-        color: $violet;
-        transition: all 0.4s;
-        padding: 20px;
+
     }
     .footer {
         display: flex;
