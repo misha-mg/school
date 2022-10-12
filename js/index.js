@@ -1,45 +1,73 @@
 window.addEventListener('DOMContentLoaded', () => {
 
-const burger = document.querySelector('#header__burger'),
-      body = document.querySelector('body'),
-      menuNav = document.querySelector('#header-menu__navbar');
+    const burger = document.querySelector('#header__burger'),
+          body = document.querySelector('body'),
+          menuNav = document.querySelector('#header-menu__navbar');
 
-burger.addEventListener('click', () => {
-    burger.classList.toggle('active');
-    menuNav.classList.toggle('active');
-    body.classList.toggle('lock');
-});
+    burger.addEventListener('click', () => {
+        burger.classList.toggle('active');
+        menuNav.classList.toggle('active');
+        body.classList.toggle('lock');
+    });
 
-menuNav.addEventListener('click', () => {
-    burger.classList.toggle('active');
-    menuNav.classList.toggle('active');
-    body.classList.toggle('lock');
-});
+    menuNav.addEventListener('click', () => {
+        burger.classList.toggle('active');
+        menuNav.classList.toggle('active');
+        body.classList.toggle('lock');
+    });
 
-// menuNav.addEventListener('click', (event) => {
-//     const target = event.target;
-//         if(target && target.classList.contains('header-menu__navbar')){
-//             menuNav.classList.remove('active');
-//             burger.classList.remove('active');
-//         }
-// });
 
-// const s = window.screen;  //Переменная для выясняющая размер вашего экрана 
-const width = q.width = 500;
-const height = q.height = 500;
-const letters = Array(256).join(1).split('');
 
-const draw = function () {
-  q.getContext('2d').fillStyle='rgba(1, 28, 38,.097)'; //Тут цвет фона
-  q.getContext('2d').fillRect(0,0,width,height);
-  q.getContext('2d').fillStyle='#41BF9B'; //Тут цвет букв
-  letters.map(function(y_pos, index){
-  text = String.fromCharCode(65+Math.random()*33);
-  x_pos = index * 10;
-  q.getContext('2d').fillText(text, x_pos, y_pos);
-  letters[index] = (y_pos > 758 + Math.random() * 1e4) ? 0 : y_pos + 10;
-  });
-};
-setInterval(draw, 33);
+    // const s = window.screen;  //Переменная для выясняющая размер вашего экрана 
+
+
+
+  // BIO HIDE
+
+  const bioEl = document.querySelectorAll('.bio-element'),
+        bioBtn = document.querySelectorAll('.bio-button'),
+        bioBtns = document.querySelector('.bio__buttons');
+
+
+      function hideBtnContent() {
+
+        bioEl.forEach(item => {
+            item.style.display = 'none';
+        })
+
+        bioBtn.forEach(item => {
+            item.classList.remove('bio-button__active');
+        })
+      }
+      
+
+      function showBtnContent(i = 0) {
+
+        bioEl[i].style.display = 'block';
+
+        bioBtn[i].classList.add('bio-button__active');
+
+      }
+
+      bioBtns.addEventListener('click', (event) => {
+        const target = event.target;
+        if(target && target.classList.contains('bio-button')){
+          bioBtn.forEach((item, i) => {
+                if(target == item) {
+                    hideBtnContent();
+                    showBtnContent(i);
+                }
+            })
+        }
+
+      })
+      hideBtnContent();
+      showBtnContent(0);
+
+
+
+    
+    
+
 
 });
