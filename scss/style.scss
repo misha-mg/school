@@ -762,6 +762,40 @@ main{
         height: 200px;
 
     }
+
+
+    // BIO
+
+
+    .bio__buttons {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .bio-button{
+        margin: 10px;
+    }
+
+    // BIO STYLE
+
+    .bio-style__img-row img{
+        width: 200px;
+        border: solid 3px $dark;
+    }
+    .bio-style__img-block{
+        margin: 10px;
+    }
+
+    // BIO MUSIC
+
+    .bmb-item__covers img{
+        width: 175px;
+    }
+
+
+    // FOOTER
+
+
     .footer {
         display: flex;
         justify-content: space-between;
@@ -773,8 +807,4 @@ main{
         order: 1;
     }
 
-}
-
-.hide{
-    display: none;
 }

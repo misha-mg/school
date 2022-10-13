@@ -850,6 +850,34 @@ main {
     height: 200px;
   }
 
+  .bio__buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .bio-button {
+    margin: 10px;
+  }
+
+  .bio-style__img-row img {
+    width: 200px;
+    border: solid 3px rgb(1, 28, 38);
+  }
+
+  .bio-style__img-block {
+    margin: 10px;
+  }
+
+  .bmb-item__covers img {
+    width: 175px;
+  }
+
   .footer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -872,7 +900,4 @@ main {
         -ms-flex-order: 1;
             order: 1;
   }
-}
-.hide {
-  display: none;
 }
