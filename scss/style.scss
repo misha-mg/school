@@ -329,7 +329,7 @@ main{
 }
 .skils-item h2{
     font-weight: 600;
-
+    width: 170px;
 }
 
 // BIO STYLE
@@ -440,7 +440,6 @@ main{
 .bmb-item__covers {
     display: flex;
     justify-content: start;
-    width: 500px;
     margin-right: 20px;
 }
 .bmb-item__covers-reverse{
@@ -574,7 +573,7 @@ main{
         order: 1;
         display: flex;
         justify-content: center;
-        width: 500px;
+        max-width: 500px;
         margin-right: 0px;
     }
     .bmb-item__covers-reverse{
@@ -582,6 +581,21 @@ main{
         justify-content: center;
         margin-right: 0px;
         margin-left: 0px;
+    }
+
+        // BIO SKILLS
+
+
+    .skils-item {
+        height: 200px;
+        width: 300px;
+        padding: 20px;
+        margin: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border: solid 3px $violet;
+        transition: all 0.2s;
     }
 
 
@@ -691,17 +705,13 @@ main{
     }
     .bio-sport__text-item {
         text-align: center;
-        width: 70%;
+        width: 85%;
         margin-bottom: 30px;
     }
 
 
-    // BIO SKILLS
 
-
-
-
-
+    // BIO STYLE
 
 
     .bio-style__img-row img{
@@ -733,6 +743,9 @@ main{
 
 @media screen and (max-width: 580px) {
    
+
+
+
     .header-menu__logo a{
         font-size: 30px;
     }
@@ -774,16 +787,24 @@ main{
     }
     .bio-button{
         margin: 10px;
+        padding: 10px 15px;
+        font-size: 20px;
+    }
+
+    // BIO SPORT 
+
+    .bio-sport__img img{
+        margin: 10px;
     }
 
     // BIO STYLE
 
     .bio-style__img-row img{
-        width: 200px;
+        width: 175px;
         border: solid 3px $dark;
     }
     .bio-style__img-block{
-        margin: 10px;
+        margin: 5px;
     }
 
     // BIO MUSIC
