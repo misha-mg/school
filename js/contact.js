@@ -38,6 +38,7 @@ window.addEventListener('DOMContentLoaded', () => {
                     }, 2000);
                 } else {
                     contButton.textContent = message.failure;
+                    form.reset();
                     setTimeout(() => {
                       contButton.textContent = 'SEND';
                     }, 2000);
