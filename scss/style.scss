@@ -505,7 +505,7 @@ main{
 .contact__title {
     font-size: 25px;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 .title {
 }
@@ -520,6 +520,7 @@ main{
     border: solid 3px $violet;
     background-color: rgb(1, 28, 38, .0);
     color: $green;
+    font-family: 'IBM Plex Mono', monospace;
     outline: none;
     resize: none;
     padding: 10px;

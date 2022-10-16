@@ -547,7 +547,7 @@ main {
 .contact__title {
   font-size: 25px;
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .inpuns-person {
@@ -563,6 +563,7 @@ main {
   border: solid 3px #B149BF;
   background-color: rgba(1, 28, 38, 0);
   color: #41BF9B;
+  font-family: "IBM Plex Mono", monospace;
   outline: none;
   resize: none;
   padding: 10px;
