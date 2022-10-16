@@ -487,6 +487,88 @@ main{
 // }
 
 
+
+// CONTACT
+
+
+.contact-wrapper {
+    padding-top: 50px;
+}
+.wrapper {
+}
+.container {
+}
+.contact {
+    width: 100%;
+    text-align: center;
+}
+.contact__title {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.title {
+}
+.inpuns-person {
+    display: flex;
+    justify-content: center;
+}
+.contact__form{
+
+}
+.contact__form input, textarea{
+    border: solid 3px $violet;
+    background-color: rgb(1, 28, 38, .0);
+    color: $green;
+    outline: none;
+    resize: none;
+    padding: 10px;
+    margin: 10px;
+    font-size: 17px;
+    transition: all 0.3s;
+}
+.contact__form textarea:hover{
+    border: solid 3px $yellow;
+    background-color: rgb(1, 28, 38, .5);
+    color: $yellow;
+}
+.contact__form input:hover{
+    border: solid 3px $yellow;
+    background-color: rgb(1, 28, 38, .5);
+    color: $yellow;
+}
+.inpuns-person input{
+    height: 50px;
+    width: 200px;
+}
+.input-message textarea{
+    height: 200px;
+    width: 420px;
+    
+}
+.area-button{
+    display: flex;
+    justify-content: center;
+}
+.inputs-button {
+}
+.contact__btn {
+    @include button;
+    font-weight: 500;
+    margin: 10px;
+    border: solid 3px $violet;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(1, 28, 38, .5);
+}
+.contact__btn:hover {
+    background-color: rgb(1, 28, 38, .57);
+    border-color: $yellow;
+    color: $yellow;
+}
+
+
+
 // FOOTER
 
 
@@ -735,6 +817,35 @@ main{
     }
 
 
+    // CONTACT
+
+
+    .contact__form{
+        display: flex;
+        justify-content: center;
+    }
+    .inpuns-person {
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+    }
+    .input-message textarea{
+        height: 120px;
+        width: 200px;
+        
+    }
+    .area-button{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .contact__btn {
+        height: 50px;
+        font-size: 18px;
+        padding: 0;
+    }
+
+
 }
 
 
@@ -811,6 +922,18 @@ main{
 
     .bmb-item__covers img{
         width: 175px;
+    }
+
+
+    // CONATCT
+
+    .contact__form{
+        flex-direction: column;
+    }
+    .inpuns-person {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
 

@@ -28,7 +28,7 @@
                         <ul>
                             <li class="navbar-item"><a href="bio.html">BIO</a></li>
                             <li class="navbar-item"><a href="">PORTFOLIO</a></li>
-                            <li class="navbar-item "><a href="contact.html">CONTACT</a></li>
+                            <li class="navbar-item navbar-item-active"><a href="contact.html">CONTACT</a></li>
                         </ul>
                         <div class="navbar__social">
                             <img src="" alt="">
@@ -45,27 +45,35 @@
 
     <main>
 
-                <!-- HERO BLOCK -->
-    
-    
-                <div class="hero-block__wrapper wrapper">
-                    <div class="container">
-                        <div class="hero-block"> 
-                            <div class="hero-block__title">
-                               <h2>frontend</h2>
-                               <h1>GORODNYTSKYY</h1>
-                               <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia dolore mollitia odio enim temporibus sed nisi laborum expedita provident blanditiis?</span>
-                                <button class="hero-block__button">import</button>
-                            </div>
-                            <div class="hero-block__intertain" id="block">
-                                <div class="some-block">
-                                    <canvas id="q"></canvas>
-                                </div>
-                            </div>
             
+    <div class="contact-wrapper wrapper">
+        <div class="container">
+            <div class="contact">
+                
+                <div class="contact__title title">
+                    <h1>CONTACT ME</h1>
+                </div>
+                <form class="contact__form" action="#">
+                    <div class="inpuns-person">
+                        <input placeholder="Name" type="text" name="name" id="">
+                        <input placeholder="Email" type="email" name="phone" id="">
+                        <input placeholder="Phone" type="number" name="phone" id="">
+                    </div>
+                    <div class="area-button">
+                        <div class="input-message">
+                            <textarea placeholder="Message" name="message" id="" cols="30" rows="10"></textarea>
+                        </div>
+                        <div class="inputs-button">
+                            <button class="contact__btn">SEND</button>
                         </div>
                     </div>
-                </div>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+
+
 
     </main>
 
@@ -94,8 +102,7 @@
 
     
 
-    <script src="js/index.js"></script>
-    <script src="js/matrix.js"></script>
+    <script src="js/contact.js"></script>
 
 </body>
 </html>
