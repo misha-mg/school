@@ -335,7 +335,7 @@ main {
 }
 
 .skils-item {
-  height: 200px;
+  min-height: 200px;
   width: 350px;
   padding: 20px;
   margin: 20px;
@@ -360,7 +360,7 @@ main {
 
 .skils-item h2 {
   font-weight: 600;
-  width: 170px;
+  width: 190px;
 }
 
 .bio-style__title {
@@ -497,6 +497,13 @@ main {
 .bmb-item__covers img {
   width: 200px;
   border: solid 3px rgb(1, 28, 38);
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.bmb-item__covers a:hover img {
+  opacity: 0.7;
+  border: solid 6px rgb(1, 28, 38);
 }
 
 .bmb-item__covers a:last-child {
@@ -755,7 +762,6 @@ main {
   }
 
   .skils-item {
-    height: 200px;
     width: 300px;
     padding: 20px;
     margin: 15px;
@@ -920,7 +926,7 @@ main {
   }
 
   .bpi__item {
-    width: 70%;
+    width: 85%;
     text-align: center;
     margin-bottom: 30px;
   }
