@@ -65,7 +65,25 @@ window.addEventListener('DOMContentLoaded', () => {
       showBtnContent(0);
 
 
-      // FORMS
+      // SLIDER
+
+
+      
+      if ($(window).width() < 768) {   
+        $('.bio-prog__skils').addClass('owl-carousel');
+      } else {
+          $('.bio-prog__skils').removeClass('owl-carousel');
+      };
+    
+        $(".owl-carousel").owlCarousel({
+            items: 1,
+            loop: true,
+            nav: true
+        });
+
+      
+
+      // FORMS .bio-prog__skils
 
       const forms = document.querySelector('form'),
             contButton = document.querySelector('.contact__btn');
@@ -79,32 +97,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
     
-      function postData(form) {
-          form.addEventListener('submit', (e) => {
-            e.preventDefault();
-
-            contButton.textContent = message.loading;
-
-            const req = new XMLHttpRequest();
-            req.open('POST', 'server.php');
-
-            req.setRequestHeader('Conrent-type', 'multipart/form-data');
-            const formData = new formData(form);
-
-            req.send(formData);
-
-            req.addEventListener('load', () => {
-                if(req.status == 200){
-                  console.log(req.response);
-                  contButton.textContent = message.success;
-                } else {
-                  contButton.textContent = message.failure;
-                }
-            })
-          });
-      }
-
-      postData(formss);
 
 
 });
