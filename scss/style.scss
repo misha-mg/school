@@ -50,7 +50,7 @@ a:hover{
 }
 .wrapper{
 	width: 100%;
-    padding: 0px 50px;
+    padding: 0px 25px;
 }
 .title{
     text-align: center;
@@ -692,7 +692,7 @@ main{
 
 // ВТОРАЯ АДАПТАЦИЯ
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
 
 
     body.lock{
@@ -805,7 +805,7 @@ main{
 
     .skils-item {
         height: 200px;
-        width: 350px;   
+        width: 330px;   
         margin: 0 auto;
     }
     .bio-prog__skils{
@@ -894,6 +894,7 @@ main{
 
 
 
+
     .header-menu__logo a{
         font-size: 30px;
     }
@@ -952,16 +953,17 @@ main{
         font-weight: 700;
     }
     .skils-item span{
-        font-size: 17px;
+        font-size: 16px;
     }
     .skils-item {
-        min-height: 240px;
-        width: 250px;   
+        min-height: 270px;
+        width: 220px;
         margin: 0 auto;
+        padding: 20px;
     }
     .owl-nav {
         position: absolute;
-        top: 75px;
+        top: 90px;
         width: 100%;
         display: flex;
         justify-content: space-between;
@@ -977,7 +979,7 @@ main{
     // BIO STYLE
 
     .bio-style__img-row img{
-        width: 175px;
+        width: 150px;
         border: solid 3px $dark;
     }
     .bio-style__img-block{
@@ -987,7 +989,7 @@ main{
     // BIO MUSIC
 
     .bmb-item__covers img{
-        width: 175px;
+        width: 150px;
     }
 
 
@@ -1015,6 +1017,15 @@ main{
     }
     .social {
         order: 1;
+    }
+
+}
+
+
+@media screen and (max-width: 330px) {
+
+    .owl-nav {
+        display: none;
     }
 
 }

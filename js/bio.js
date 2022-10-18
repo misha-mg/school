@@ -46,7 +46,7 @@ window.addEventListener('DOMContentLoaded', () => {
       // SLIDER
 
       
-      if ($(window).width() < 768) {   
+      if ($(window).width() < 769) {   
         $('.bio-prog__skils').addClass('owl-carousel');
       } else {
           $('.bio-prog__skils').removeClass('owl-carousel');
@@ -55,7 +55,11 @@ window.addEventListener('DOMContentLoaded', () => {
         $(".owl-carousel").owlCarousel({
             items: 1,
             loop: true,
-            nav: true
+            nav: true,
+            dots: false,
+            autoplay: true,
+            autoplayHoverPause: true,
+            smartSpeed: 600
         });
 
     
