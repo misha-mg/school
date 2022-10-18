@@ -1,26 +1,5 @@
 window.addEventListener('DOMContentLoaded', () => {
 
-    //  BURGER
-
-
-
-    const burger = document.querySelector('#header__burger'),
-    body = document.querySelector('body'),
-    menuNav = document.querySelector('#header-menu__navbar');
-
-    burger.addEventListener('click', () => {
-      burger.classList.toggle('active');
-      menuNav.classList.toggle('active');
-      body.classList.toggle('lock');
-    });
-
-    menuNav.addEventListener('click', () => {
-      burger.classList.toggle('active');
-      menuNav.classList.toggle('active');
-      body.classList.toggle('lock');
-    });
-
-
 
       // FORMS
 
@@ -34,8 +13,6 @@ window.addEventListener('DOMContentLoaded', () => {
       };
 
 
-
-    
       function postData(form) {
           form.addEventListener('submit', (e) => {
             e.preventDefault();
@@ -70,6 +47,5 @@ window.addEventListener('DOMContentLoaded', () => {
       }
 
       postData(forms);
-
 
 });

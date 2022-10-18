@@ -1,33 +1,11 @@
 window.addEventListener('DOMContentLoaded', () => {
 
-    const burger = document.querySelector('#header__burger'),
-          body = document.querySelector('body'),
-          menuNav = document.querySelector('#header-menu__navbar');
-
-    burger.addEventListener('click', () => {
-        burger.classList.toggle('active');
-        menuNav.classList.toggle('active');
-        body.classList.toggle('lock');
-    });
-
-    menuNav.addEventListener('click', () => {
-        burger.classList.toggle('active');
-        menuNav.classList.toggle('active');
-        body.classList.toggle('lock');
-    });
-
-
-
-    // const s = window.screen;  //Переменная для выясняющая размер вашего экрана 
-
-
-
   // BIO HIDE
+
 
   const bioEl = document.querySelectorAll('.bio-element'),
         bioBtn = document.querySelectorAll('.bio-button'),
         bioBtns = document.querySelector('.bio__buttons');
-
 
       function hideBtnContent() {
 
@@ -67,7 +45,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
       // SLIDER
 
-
       
       if ($(window).width() < 768) {   
         $('.bio-prog__skils').addClass('owl-carousel');
@@ -81,22 +58,5 @@ window.addEventListener('DOMContentLoaded', () => {
             nav: true
         });
 
-      
-
-      // FORMS .bio-prog__skils
-
-      const forms = document.querySelector('form'),
-            contButton = document.querySelector('.contact__btn');
-
-      const message = {
-        loading: 'Загрузка',
-        success: 'Отправлено',
-        failure: 'Ошибка'
-      };
-
-
-
     
-
-
 });
