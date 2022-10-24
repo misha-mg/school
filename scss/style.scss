@@ -154,21 +154,25 @@ main{
     min-height: 300px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     width: 45%;
 }
 .hero-block__title h1{
     font-size: 60px;
+    margin: -20px 0px;
 }
 .hero-block__title h2{
     font-size: 22px;
+    margin-bottom: 20px;
 }
 .hero-block__title span{
+    margin-top: 20px;
     font-size: 18px;
 
 }
 .hero-block__button{
     @include button;
+    margin-top: 20px;
     width: 200px;
     transition: all 0.3s;
 }
