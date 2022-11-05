@@ -139,10 +139,6 @@ main{
 .hero-block__wrapper {
     padding-top: 75px;
 }
-.wrapper {
-}
-.container {
-}
 .hero-block {
     display: flex;
     justify-content: space-between;
@@ -196,10 +192,6 @@ main{
 //  BIO FIRST
 
 
-.bio-wrapper {
-}
-.wrapper {
-}
 .bio {
     padding-top: 50px;
     margin-bottom: -50px;
@@ -234,20 +226,6 @@ main{
 }
 
 
-.bio-sport-wrapper {
-}
-.wrapper {
-}
-.bio-element {
-}
-.bio-sport-container {
-}
-.container {
-}
-.bio-sport {
-}
-.bio-title {
-}
 .bio-sport__img{
     display: flex;
     justify-content: center;
@@ -274,16 +252,6 @@ main{
 //  BIO SECOND
 
 
-.bio-prog-wrapper {
-}
-.wrapper {
-}
-.bio-element {
-}
-.container {
-}
-.bio-prog {
-}
 .bio-prog__title{
     text-align: center;
     margin-bottom: 35px;
@@ -339,16 +307,6 @@ main{
 
 // BIO STYLE
 
-.bio-style__wrapper {
-}
-.wrapper {
-}
-.bio-element {
-}
-.container {
-}
-.bio-style {
-}
 .bio-style__title {
     margin-top: 0;
 }
@@ -409,20 +367,6 @@ main{
 // BIO MUSIC
 
 
-.bio-music__wrapper {
-}
-.wrapper {
-}
-.bio-element {
-}
-.container {
-}
-.bio-music {
-}
-.bio-music__title {
-}
-.title {
-}
 .bio-music__subtitle {
     margin-bottom: 30px;
     padding-bottom: 30px;
@@ -487,14 +431,6 @@ main{
     border-bottom: 3px solid $green;
     margin: 0 auto;
 }
-// .bmb_stick::after{
-//     content: '';
-//     position: absolute;
-//     left: 550px;
-//     background-color: $green;
-//     width: 200px;
-//     height: 2px;
-// }
 
 
 
@@ -589,8 +525,6 @@ main{
 }
 .footer__wrapper:hover {
     background: rgba(1, 28, 38, 0.8);
-}
-.wrapper {
 }
 .container-footer {
     max-width: 1245px;
@@ -919,9 +853,6 @@ main{
     .hero-block__title span{
         font-size: 16px;
     
-    }
-    .hero-block__intertain {
-        // background-color: $green;
     }
     .some-block canvas{
         width: 300px;
